@@ -1,0 +1,106 @@
+.header {
+  background-color: #000;
+  margin-top: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 18px 15px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.logo {
+  order: 1;
+  display: block;
+  margin-left: auto;
+}
+
+.buttonMenu {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  display: block;
+  padding: 0;
+  margin-right: 25px;
+}
+
+.buttonMap {
+  display: none;
+}
+
+.buttonPhone {
+  margin-right: 25px;
+}
+
+.buttonMail {
+  display: none;
+}
+
+.buttonSearch {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    justify-content: space-between;
+  }
+
+  .logo {
+    order: 0;
+    margin-left: 0;
+  }
+
+  .logo img {
+    width: 146px;
+    height: 35px;
+  }
+
+  .buttonMap {
+    display: block;
+    margin-right: 25px;
+  }
+
+  .buttonPhone {
+    margin-right: 0;
+    text-decoration: none;
+  }
+
+  .buttonPhone svg {
+    display: none;
+  }
+
+  .buttonPhone span {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-color);
+  }
+
+  .buttonBasket {
+    margin-right: 25px;
+  }
+
+  .buttonMail {
+    display: block;
+    margin-right: 25px;
+  }
+
+  .buttonSearch {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    background-color: rgba(33,33,33,.8);
+  }
+}
